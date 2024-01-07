@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidor de Velocidad</title>
+</head>
+<body>
+    <h1>Medidor de Velocidad de Internet</h1>
+    <button onclick="medirVelocidad()">Medir Velocidad</button>
+    <p id="resultado"></p>
+
+    <script>
+        function medirVelocidad() {
+            // Puedes usar JavaScript para enviar una solicitud al servidor (Python) y mostrar los resultados
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("resultado").innerHTML = "Velocidad: " + this.responseText + " Mbps";
+                }
+            };
+            xhttp.open("GET", "/medir_velocidad", true);
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>
