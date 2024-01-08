@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-size: 14px; /* Reduje el tamaño de la fuente del cuerpo */
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.speedWIFI {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 15px; /* Reduje el espacio entre la imagen y otros elementos */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px; /* Reduje el espacio entre la imagen y otros elementos */
+}
+
+button {
+    padding: 50px 5px; /* Reduje el tamaño del padding para el botón */
+    background-color: rgb(33, 8, 88);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px 0;
+    font-size: 14px; /* Reduje el tamaño de la fuente del botón */
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-copyright {
+    margin-bottom: 10px; /* Reduje el espacio entre el texto del pie de página y otros elementos */
+    font-size: 12px; /* Reduje el tamaño de la fuente del pie de página */
+}
+
+.social-icons {
+    margin-top: 15px; /* Reduje el espacio entre los iconos sociales y otros elementos */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px; /* Reduje el espacio entre los iconos sociales */
+}
+
+.social-icons img {
+    width: 30px; /* Reduje el tamaño de los iconos sociales */
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 12px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    .container {
+        max-width: 100%; /* Hace que el contenedor ocupe el ancho completo en pantallas pequeñas */
+        margin: 10px; /* Reduce el margen en pantallas pequeñas */
+    }
+
+    .speedWIFI, img {
+        max-width: 100%; /* Asegura que las imágenes se ajusten al ancho de la pantalla */
+    }
+
+    button {
+        padding: 8px 12px; /* Ajusta el tamaño del padding para el botón en pantallas pequeñas */
+        font-size: 12px; /* Ajusta el tamaño de la fuente del botón en pantallas pequeñas */
+    }
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#result p {
+    margin: 10px 0;
+}
+
+
+#progressBarContainer {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#progressBar {
+    height: 20px;
+    background-color: rgb(18, 231, 227);
+    border-radius: 8px;
+    width: 0;
+    transition: width 0.5s ease; /* Agregamos una transición para que sea suave el cambio de ancho */
+}
+
+
+#startBtn img {
+    max-width: 90px; /* Ajusta el ancho máximo de la imagen según sea necesario */
+    max-height: 90px; /* Ajusta la altura máxima de la imagen según sea necesario */
+    vertical-align: middle; /* Alinea verticalmente la imagen dentro del botón */
+    margin-right: 1px; /* Agrega un pequeño margen a la derecha de la imagen */
+}
+
+/* Otros estilos para el botón (puedes ajustar según tus preferencias) */
+#startBtn {
+    padding: 1px 10px;
+    background-color: rgb(33, 8, 88);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#startBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#nomo {
+    max-width: 50%; /* Ajusta el ancho máximo según sea necesario */
+    height: auto;
+    margin-top: 10px; /* Añadido para separar la imagen de los resultados */
+    /* Otros estilos específicos para la imagen con el ID "nomo" */
+}
